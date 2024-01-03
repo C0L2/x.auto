@@ -1,6 +1,6 @@
 import React from "react"
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons"
-import {theme, setTheme} from "@/services/theme-service"
+import { theme, setTheme } from "@/services/theme-service"
 import clsx from "clsx"
 
 const ThemeSwitch = ({

@@ -19,7 +19,7 @@ export function Login() {
       <Form {...form}>
         <form
           onSubmit={handleSubmit}
-          className="space-y-2 h-auto w-full rounded-[4px] max-w-[500px] shadow-xl p-8 bg-white bg-slate-200"
+          className="space-y-2 h-auto w-full rounded-[4px] max-w-[500px] shadow-xl p-8 bg-white"
         >
           <div className="w-full flex flex-col justify-normal items-start">
             <h3 className="font-bold text-2xl">x.auto | login</h3>

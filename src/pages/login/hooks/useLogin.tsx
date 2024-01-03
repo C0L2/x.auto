@@ -3,7 +3,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { FormEvent } from "react"
 import * as z from "zod"
-import { useNavigate } from "react-router-dom"
 
 const formSchema = z.object({
   email: z
@@ -23,7 +22,6 @@ const useLogin = () => {
   })
 
   const [loginUser, { isLoading, isError }] = useLoginUserMutation()
-  const navigate = useNavigate()
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
@@ -33,11 +31,7 @@ const useLogin = () => {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const { email, password } = values
     if (!isLoading) {
-      loginUser({ email, password }).then(() => {
-        if (!isError) {
-          navigate("/dashboard")
-        }
-      })
+      loginUser({ email, password })
     }
   }
 

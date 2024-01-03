@@ -31,9 +31,8 @@ export const authApi = reduxAPI.injectEndpoints({
                 dispatch(setLoading(true))
                 const cookies = new Cookies()
                 await queryFulfilled
-                cookies.remove('ai_bot_token')
+                cookies.remove('access_token')
                 dispatch(logout())
-                // window.location.replace("/login");
             },
         }),
     }),
