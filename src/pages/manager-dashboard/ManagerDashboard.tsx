@@ -1,5 +1,5 @@
 const ManagerDashboard = () => {
-  return <div>ManagerDashboard</div>
+  return <div className="bg-red-500 ">ManagerDashboard</div>
 }
 
 export default ManagerDashboard

@@ -13,6 +13,7 @@ import ManagerDashboard from "@/pages/manager-dashboard/ManagerDashboard"
 import AuthGuard from "@/guards/AuthGuard"
 import PrivateLayout from "@/layouts/private/MainLayout"
 import RoleGuard from "@/guards/RoleGuard"
+import Appointments from "@/pages/appointments"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -53,7 +54,7 @@ const router = createBrowserRouter(
           path="/appointments"
           element={
             <RoleGuard allowedRoles={[1]}>
-              <ManagerDashboard />
+              <Appointments />
             </RoleGuard>
           }
         />

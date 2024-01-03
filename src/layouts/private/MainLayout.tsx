@@ -7,7 +7,7 @@ export const PrivateLayout = () => {
     <div>
       <div className="flex h-[100vh]">
         <Sidebar />
-        <div>
+        <div className="w-full h-full overflow-hidden">
           <Navbar />
           <Outlet />
         </div>

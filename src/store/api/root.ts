@@ -5,7 +5,7 @@ export const reduxAPI = createApi({
     reducerPath: 'api',
     baseQuery,
     tagTypes: [
-        'GET_CONTEXT',
+        'GET_APPOINTMENTS',
     ],
     endpoints: () => ({}),
 })
